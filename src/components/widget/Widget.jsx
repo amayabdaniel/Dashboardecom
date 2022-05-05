@@ -1,21 +1,17 @@
 import "./widget.scss";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
+
+
 import AlbumIcon from '@mui/icons-material/Album';
 import LibraryMusicIcon from '@mui/icons-material/LibraryMusic';
 import MicIcon from '@mui/icons-material/Mic';
-
-
-
-
+import Users from './Users'
 
 function Widget({ type }) {
-  
-  
-  
   let data;
 
-
+  //temporary
   const amount = 100;
   const diff = 20;
 
@@ -92,6 +88,7 @@ function Widget({ type }) {
         <span className="counter">
           {data.isMoney && ""} {amount}
         </span>
+        <Users />
         <span className="link">{data.link}</span>
       </div>
       <div className="right">

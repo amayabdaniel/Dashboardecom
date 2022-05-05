@@ -1,9 +1,11 @@
 import "./widget.scss";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
-import AccountBalanceWalletOutlinedIcon from "@mui/icons-material/AccountBalanceWalletOutlined";
-import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
-import MonetizationOnOutlinedIcon from "@mui/icons-material/MonetizationOnOutlined";
+
+
+import AlbumIcon from '@mui/icons-material/Album';
+import LibraryMusicIcon from '@mui/icons-material/LibraryMusic';
+import MicIcon from '@mui/icons-material/Mic';
 
 function Widget({ type }) {
   let data;
@@ -31,11 +33,11 @@ function Widget({ type }) {
       break;
     case "order":
       data = {
-        title: "ORDERS",
+        title: "ALBUMS",
         isMoney: false,
-        link: "View all orders",
+        link: "View all albums",
         icon: (
-          <ShoppingCartOutlinedIcon
+          <AlbumIcon
             className="icon"
             style={{
               backgroundColor: "rgba(218, 165, 32, 0.2)",
@@ -47,11 +49,11 @@ function Widget({ type }) {
       break;
     case "earning":
       data = {
-        title: "EARNINGS",
+        title: "GENRES",
         isMoney: true,
-        link: "View net earnings",
+        link: "View all genres",
         icon: (
-          <MonetizationOnOutlinedIcon
+          <LibraryMusicIcon
             className="icon"
             style={{ backgroundColor: "rgba(0, 128, 0, 0.2)", color: "green" }}
           />
@@ -60,11 +62,11 @@ function Widget({ type }) {
       break;
     case "balance":
       data = {
-        title: "BALANCE",
+        title: "ARTISTS",
         isMoney: true,
-        link: "See details",
+        link: "View all artists",
         icon: (
-          <AccountBalanceWalletOutlinedIcon
+          <MicIcon
             className="icon"
             style={{
               backgroundColor: "rgba(128, 0, 128, 0.2)",

@@ -20,13 +20,9 @@ function Datatable() {
         return (
           <div className="cellAction">
             <Link to="/users/test" style={{ textDecoration: "none" }}>
-              <div className="viewButton">View</div>
+              <div className="viewButton">Edit</div>
             </Link>
-            <div
-              className="deleteButton"
-              onClick={() => handleDelete(params.row.id)}
-            >
-              Delete
+            <div className="deleteButton" onClick={() => handleDelete(params.row.id)}>Delete
             </div>
           </div>
         );

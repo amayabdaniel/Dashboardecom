@@ -1,16 +1,21 @@
 import "./widget.scss";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
-
-
 import AlbumIcon from '@mui/icons-material/Album';
 import LibraryMusicIcon from '@mui/icons-material/LibraryMusic';
 import MicIcon from '@mui/icons-material/Mic';
 
+
+
+
+
 function Widget({ type }) {
+  
+  
+  
   let data;
 
-  //temporary
+
   const amount = 100;
   const diff = 20;
 
